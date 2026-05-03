@@ -88,7 +88,7 @@ export default function NoteEditor() {
 
   if (!note) {
     return (
-      <div className="flex-1 flex flex-col items-center justify-center bg-white dark:bg-gray-850 text-center p-8">
+      <div className="flex-1 flex flex-col items-center justify-center bg-white dark:bg-gray-800 text-center p-8">
         <div className="text-5xl mb-4">✏️</div>
         <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">Not seçin veya yeni oluşturun</h3>
         <p className="text-sm text-gray-400 dark:text-gray-500">Soldan bir not seçin ya da + Yeni butonuna tıklayın</p>
@@ -97,7 +97,7 @@ export default function NoteEditor() {
   }
 
   return (
-    <div className="flex-1 flex flex-col bg-white dark:bg-gray-850 min-w-0 h-full" style={{ backgroundColor: note.color !== '#ffffff' ? note.color + '33' : undefined }}>
+    <div className="flex-1 flex flex-col bg-white dark:bg-gray-800 min-w-0 h-full" style={{ backgroundColor: note.color !== '#ffffff' ? note.color + '33' : undefined }}>
       {/* Toolbar */}
       <div className="flex items-center gap-1 px-4 py-2 border-b border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm flex-wrap">
         {/* Back on mobile */}
